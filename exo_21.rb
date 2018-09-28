@@ -10,10 +10,10 @@ elsif (a == 1)
     puts "Voici la pyramide :"
     puts die
 else
-        puts "Voici la pyramide :"
-        while (i < a + 1)
-            puts esp.ljust(a)+die*i
-            a -= 1
-            i += 1
+    puts "Voici la pyramide :"
+    while (a > 0)
+    puts (esp.ljust(a)+die*i).delete_prefix(" ")
+    a -= 1
+    i += 1
  end
 end
